@@ -22,7 +22,7 @@ st.title("FReaky Gemma 2: 2b hands on")
 input_text=st.text_input("Hey!! ask me a question")
 
 
-## Ollama Llama2 model
+
 llm=Ollama(model="gemma2:2b")
 output_parser=StrOutputParser()
 chain=prompt|llm|output_parser
